@@ -42,4 +42,4 @@ jobs:
         retention-days: 1
 
     - name: Wait for correction
-      run: sleep 100
+      run: sleep 300
