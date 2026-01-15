@@ -33,4 +33,4 @@ jobs:
         NGROK_URL=$(curl -s http://localhost:4040/api/tunnels | grep -o '"public_url":"[^"]*https[^"]*' | cut -d'"' -f4)
         echo "🌐 URL publique : $NGROK_URL"
 
-        sleep 120
+        sleep 299
