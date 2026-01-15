@@ -32,7 +32,7 @@ jobs:
 
         NGROK_URL=$(curl -s http://localhost:4040/api/tunnels | grep -o '"public_url":"[^"]*https[^"]*' | cut -d'"' -f4)
         echo $NGROK_URL > preview_url.txt
-        echo "🌐 URL publique : $NGROK_URL"
+        echo " URL publique : $NGROK_URL"
         
     - name: Upload Artefact
       uses: actions/upload-artifact@v4
